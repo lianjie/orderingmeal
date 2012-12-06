@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>订餐</title>
+	<link rel="stylesheet"  href="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.css" />
+
+    <script src="lib/jquery.js"></script>
+	<script src="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+    <script src='data/foods.json' type='text/javascript'></script>
+    <script src='data/restaurants.json' type='text/javascript'></script>
+    <script src='data/users.json' type='text/javascript'></script>
+    <script src="js/application.js"></script>
+	<script src="js/orderingmeal.js"></script>
+
+</head> 
+<body>
+
+<div data-role="page" class="type-interior">
+
+	<div data-role="header" data-theme="a">
+		<h1>订餐</h1>
+		<a href="index.html" data-role="button" data-theme="a" rel="external">back</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		人：
+		<p><input type="text" name="people" id="people" value="" } /></p>
+		<p><a href="selectpeople.html" data-role="button"  rel="external">选人</a></p>
+		餐厅：
+		<p><input type="text" name="restaurant" id="restaurant" value=""  /></p>
+		<p><a href="selectrestaurant.html" data-role="button"  rel="external">选餐厅</a></p>
+		套餐：
+		<p><input type="text" name="menu" id="menu" value=""  /></p>
+		<p><a href="selectmeal.html" data-role="button" rel="external">选套餐</a></p>
+		<p><a href="" data-role="button" onclick=orderingMeal();>确认</a></p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

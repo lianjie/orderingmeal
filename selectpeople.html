@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>选人</title>
+	<link rel="stylesheet"  href="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.css" />
+
+    <script src="lib/jquery.js"></script>
+	<script src="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+    <script src='data/foods.json' type='text/javascript'></script>
+    <script src='data/restaurants.json' type='text/javascript'></script>
+    <script src='data/users.json' type='text/javascript'></script>
+	<script src='js/application.js'></script>
+
+</head> 
+<body>
+
+<div data-role="page" class="type-interior">
+
+	<div data-role="header" data-theme="a">
+		<h1>选人</h1>
+		<a data-role="button" data-theme="a" data-rel="back">back</a>
+	</div><!-- /header -->
+
+	<div data-role="content" id="peoplelist">
+		
+		<script>selectPeople();</script>
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
